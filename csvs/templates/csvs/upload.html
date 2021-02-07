@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Main page{% endblock title %}
+
+{% block content %}
+<form action="" method="POST" class="UI form" enctype = "multipart/form-data">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit" class="ui button primary">Confirm</button>
+</form>
+{% endblock content %}
